@@ -123,8 +123,10 @@ int main() {
 * [x] Task 1
 * [x] Task 2
 * [x] Task 3
-* [] Task 4
-@dcanavi.abx :relaxed: :v:
+* [ ] Task 4
+* [ ] Task 5
+* [ ] Task 6
+@dcanavi.abx :relaxed: :v: :rofl:
 
 
 
