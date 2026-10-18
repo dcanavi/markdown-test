@@ -1,0 +1,119 @@
+# Linux Commands
+> File Directori 
+
+* 1.- pwd -> show currect directory (Print Working Directory)
+* 2.- list file and directories
+   * ls -l long format with  permissions
+   * ls -a show hidden files
+* 3.- cd foldername change directory.
+* 4.- mkdir newfolder create directory.
+* 5.- rm  file.txt remove file
+* 6.- rm -r folder remove directory and contents
+* 7.- cd file1 file2 copy file.
+* 8.- mv oldname newname move/rename file or directory
+
+> User Info
+* 1.- whoami \ show uour current username.
+* 2.- how \ show who is logged in
+* 3.- id \ show your UID, GID, and groups
+* 3.- hostname \ shoew system hostname
+
+> System Info
+* uname -a \ detailed system info
+* df -h \ disk usege (human-readable).
+* du -sh folder \ size of a folder
+* free -h \memory usage 
+* uptime \ how long system has been running.
+* top \ show running processes.
+* htop \ interactive process viewer(if installed) 
+
+> File Viewing
+* cat file.txt \ view file content
+* less file.tst \ scroll file content.
+* head -n 10 file.txt \ show first 10 Lines. 
+* tail -f log.txt \ follow log file live.
+
+> Permissions
+* chmod 755 file.sh ~ change file permissions.~
+* chow user file.txt ~ change owner.
+* ls -l ~ check permissions  on file.
+
+> Networking
+* ping google.com | check connectivity
+* curl http:// example.com | fetch webpage content.
+* wget http:// example.com/file.zip | download file.
+* ifconfig or ip addr | show network interfaces.
+* netstat -tulnp | show open port (if installed).
+
+> Command and Argument
+* echo 
+* uptime
+* echo -n Hello
+
+> Cammand Types
+
+1.- Internal or Built-in commands
+  * echo, cd, pwd, set, exit, type
+
+2 External commands
+  * ls       # Listar archivos (binario en /bin/ls)
+  * cat      # Mostrar contenido de archivos
+  * grep     # Buscar texto en archivos
+  * nmap     # Escaneo de red (si está instalado)
+  * python   # Intérprete de Python
+
+
+ 
+
+
+
+
+* 2.- clear.- Clear print 
+> Fun
+## Nmap uff 
+
+>chmod
+
+- chmod +x script.sh `Agrega permiso de ejecución (x) al dueño, grupo y otros
+- chmod -w notas.txt ` Quita permiso de escritura (w) for all
+- chmod u+r file.txt ` add read permission only to the user (owner).
+* Each permit is expressed as a number
+- 4=r
+- 2=w
+- 1=x
+* it added
+- 7 =rwx
+- 6 = rw
+- 5 = r-x
+- 4 = r--
+- chmod 644 documento.txt ` 👉 Dueño = lectura y escritura (rw-) 👉 Grupo y otros = solo lectura (r--).
+- chmod 600 server_private.key 👉 Solo el dueño puede entrar y ver los archivos.
+- chmod 644 server_public.key 👉 Todos pueden leer, solo el dueño puede escribir.
+* Básico → +x, -w, u+r
+* Intermedio → numérico (644, 755, 600)
+* Avanzado → recursivo (-R) y bits especiales (setuid, setgid, sticky bit)
+
+> tee
+
+- El comando tee en Linux lee de la entrada estándar (stdin) y escribe simultáneamente en un archivo y en la salida estándar (pantalla).
+Es como un “T” en una tubería: copia lo que pasa por el pipe.
+
+```bash
+#👉 Muestra Hola mundo en pantalla y lo guarda en saludo.txt.
+echo "Hola mundo" | tee saludo.txt 
+```
+```bash 
+#👉 Muestra la lista de archivos en pantalla y la guarda en listado.txt.
+ls -l | tee listado.txt
+```
+```bash 
+
+```
+```bash 
+
+```
+
+
+
+
+
